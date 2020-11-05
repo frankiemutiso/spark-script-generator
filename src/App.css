@@ -1,0 +1,128 @@
+.app {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-gap: 20px;
+  border-radius: 5px;
+}
+
+.left {
+  box-shadow: 0px 2px 5px 1px rgb(185, 184, 184);
+  padding: 16px 0 0 20px;
+}
+
+.files label textarea {
+  min-width: 93%;
+  max-width: 93%;
+  font-family: inherit;
+  padding: 4px 3px;
+}
+
+.left form > div {
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.range {
+  -webkit-appearance: none;
+  outline: none;
+  background-color: rgb(0, 104, 145);
+  height: 4px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgb(0, 104, 145);
+}
+
+.radios > label {
+  margin-right: 10px;
+}
+
+.radios label input {
+  margin-right: 2px;
+}
+
+.text-box {
+  width: 92%;
+  padding: 4px;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px rgb(110, 123, 128);
+}
+
+.rangeOutput {
+  background-color: rgb(73, 73, 73);
+  color: white;
+  padding: 3px 7px;
+  margin: 0 10px;
+  position: relative;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.files textarea {
+  font-family: inherit;
+  padding: 2px 3px;
+}
+
+.right {
+  position: relative;
+  height: 355px;
+  box-shadow: 0px 2px 5px 1px rgb(185, 184, 184);
+  padding-top: 18px;
+  padding-left: 10px;
+  /* padding: 16px 0 0 13px; */
+}
+
+.right h4 {
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.right textarea {
+  min-height: 314px;
+  max-height: 314px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  padding: 2px 5px;
+  min-width: 93%;
+  max-width: 93%;
+  outline: none;
+  border: none;
+  resize: none;
+  border-radius: 3px;
+}
+
+.copyBtn {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  font-family: inherit;
+  padding: 6px 8px;
+  background-color: rgb(0, 104, 145);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 1px rgb(185, 184, 184);
+}
+
+@media only screen and (max-width: 900px){
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+}
